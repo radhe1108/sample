@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="container" style="padding-top:40px;">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card mx-4">
+        <div class="card-body p-4">
+          <form [formGroup]="UserForm" (ngSubmit)="onFormSubmit(UserForm.value)">
+            <h1 style="text-align:center">User</h1>
+            <div class="input-group mb-3">
+
+              <input type="text" class="form-control" placeholder="name" formControlName="name">
+
+            </div>
+            <button type="submit" class="btn btn-block btn-success">Login</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
